@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    tools:context=".UserProfileActivity">
+
+
+    <include
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/tool_bar_layout_food"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_150"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@id/actionBar"/>
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="@dimen/height_120"
+        android:layout_height="@dimen/height_120"
+        android:text="S"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/shape_btn_one"
+        android:layout_marginLeft="@dimen/elevation_16"
+        android:layout_marginTop="-50dp"
+        android:textSize="@dimen/margin_50"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:fontFamily="@font/opensans_regular"
+        android:layout_below="@id/view"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile"
+        android:text="Sanjay Sharma"
+        android:fontFamily="@font/opensans_regular"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/height_25"
+        android:textColor="@color/primarytext"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:background="@color/app_background"
+        android:padding="@dimen/elevation_6"
+        android:layout_margin="@dimen/elevation_16">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_background"
+            app:cardCornerRadius="@dimen/elevation_8"
+            android:elevation="@dimen/elevation_2">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_background"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/height_5"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="fill_vertical"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:src="@drawable/ic_email"
+                            android:background="@drawable/shape_btn_one"
+                            android:backgroundTint="@color/white"
+                            android:tint="@color/colorPrimaryDark"
+                            android:padding="@dimen/elevation_8"/>
+                        <TextView
+                            android:layout_width="@dimen/height_100"
+                            android:layout_height="match_parent"
+                            android:text="Email"
+                            android:layout_marginLeft="@dimen/elevation_16"
+                            android:layout_marginTop="@dimen/elevation_10"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:fontFamily="@font/opensans_regular"
+                            android:gravity="fill_vertical"
+                            android:layout_gravity="fill_vertical"/>
+
+
+                        <TextView
+                            android:id="@+id/email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Email@gmail.com"
+                            android:layout_marginLeft="@dimen/elevation_16"
+                            android:layout_marginTop="@dimen/elevation_10"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:fontFamily="@font/opensans_regular"
+                            android:gravity="fill_vertical"
+                            android:autoLink="email"
+                            android:layout_gravity="fill_vertical"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/height_5"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="fill_vertical"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:src="@drawable/ic_call"
+                            android:background="@drawable/shape_btn_one"
+                            android:backgroundTint="@color/white"
+                            android:tint="@color/colorPrimaryDark"
+                            android:padding="@dimen/elevation_8"/>
+                        <TextView
+                            android:layout_width="@dimen/height_100"
+                            android:layout_height="match_parent"
+                            android:text="Phone"
+                            android:layout_marginLeft="@dimen/elevation_16"
+                            android:layout_marginTop="@dimen/elevation_10"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:fontFamily="@font/opensans_regular"
+                            android:gravity="fill_vertical"
+                            android:layout_gravity="fill_vertical"/>
+
+
+                        <TextView
+                            android:id="@+id/phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="9812345678"
+                            android:layout_marginLeft="@dimen/elevation_16"
+                            android:layout_marginTop="@dimen/elevation_10"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:fontFamily="@font/opensans_regular"
+                            android:gravity="fill_vertical"
+                            android:autoLink="phone"
+                            android:layout_gravity="fill_vertical"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/height_5"
+
+                    >
+
+                    <LinearLayout
+                        android:onClick="changePassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="fill_vertical"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:src="@drawable/ic_lock"
+                            android:background="@drawable/shape_btn_one"
+                            android:backgroundTint="@color/white"
+                            android:tint="@color/colorPrimaryDark"
+                            android:padding="@dimen/elevation_8"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Change Password"
+                            android:layout_marginLeft="@dimen/elevation_16"
+                            android:layout_marginTop="@dimen/elevation_10"
+                            android:drawableRight="@drawable/ic_keyboard_arrow_right_black"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:fontFamily="@font/opensans_regular"
+                            android:gravity="fill_vertical"
+                            android:layout_gravity="fill_vertical"/>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/height_5"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="Location"
+                        android:gravity="fill_vertical"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:src="@drawable/ic_location"
+                            android:background="@drawable/shape_btn_one"
+                            android:backgroundTint="@color/white"
+                            android:tint="@color/colorPrimaryDark"
+                            android:padding="@dimen/elevation_8"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Add your Address"
+                            android:layout_marginLeft="@dimen/elevation_16"
+                            android:layout_marginTop="@dimen/elevation_10"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:fontFamily="@font/opensans_regular"
+                            android:drawableRight="@drawable/ic_keyboard_arrow_right_black"
+                            android:gravity="fill_vertical"
+                            android:layout_gravity="fill_vertical"/>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/update_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curved_grey_round"
+        android:layout_margin="22dp"
+        android:text="Update Profile"
+        android:textSize="20dp"
+        android:fontFamily="@font/opensans_regular"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

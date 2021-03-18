@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    tools:context=".PersonalDetails">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/height_40"
+            android:layout_height="@dimen/height_40"
+            android:src="@drawable/back_btn"
+            android:padding="@dimen/elevation_12"
+            android:onClick="back"
+            android:layout_margin="@dimen/elevation_16"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add your Personal Details"
+            android:fontFamily="@font/opensans_regular"
+            android:textSize="@dimen/elevation_16"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/elevation_16"
+            android:layout_marginRight="@dimen/elevation_16"/>
+
+        <EditText
+            android:id="@+id/fullName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45"
+            android:layout_marginTop="@dimen/height_40"
+            android:background="@drawable/curved_grey_round"
+            android:hint="Name"
+            android:fontFamily="@font/opensans_regular"
+            android:paddingLeft="@dimen/elevation_16"
+            android:layout_marginRight="@dimen/height_40"
+            android:layout_marginLeft="@dimen/height_40"
+            android:textColor="@color/colorPrimaryDark"
+            android:drawableLeft="@drawable/ic_edit"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:drawablePadding="@dimen/height_15"
+            android:inputType="text"/>
+
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45"
+            android:layout_marginTop="@dimen/elevation_20"
+            android:background="@drawable/curved_grey_round"
+            android:hint="Mobile Number"
+            android:fontFamily="@font/opensans_regular"
+            android:paddingLeft="@dimen/elevation_16"
+            android:layout_marginRight="@dimen/height_40"
+            android:layout_marginLeft="@dimen/height_40"
+            android:textColor="@color/colorPrimaryDark"
+            android:drawableLeft="@drawable/ic_call"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:drawablePadding="@dimen/height_15"
+            android:inputType="phone"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sentforOtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_corner"
+            android:layout_marginLeft="@dimen/height_40"
+            android:layout_marginRight="@dimen/height_40"
+            android:layout_marginTop="@dimen/height_40"
+            android:backgroundTint="#E66270"
+            android:text="Continue"
+            android:fontFamily="@font/opensans_regular"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:onClick="otp"
+            android:drawableTint="@color/white"
+            android:paddingRight="@dimen/elevation_16"
+            android:textSize="@dimen/elevation_18"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

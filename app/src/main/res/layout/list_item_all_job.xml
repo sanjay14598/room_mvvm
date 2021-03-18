@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_8"
+    card_view:cardCornerRadius="@dimen/elevation_6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/elevation_6"
+        >
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_toLeftOf="@id/card1"
+    android:orientation="vertical">
+        <TextView
+            android:id="@+id/postName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post name back office"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/elevation_20"
+            android:fontFamily="@font/opensans_regular"/>
+
+        <TextView
+            android:id="@+id/companyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post name back office"
+            android:layout_below="@id/postName"
+            android:singleLine="true"
+            android:textSize="@dimen/elevation_16"
+            android:textColor="@color/primarytext"
+            android:fontFamily="@font/opensans_regular"/>
+
+</LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="@dimen/height_90"
+            android:layout_height="@dimen/height_90"
+            android:layout_marginRight="@dimen/elevation_8"
+            android:layout_alignParentRight="true"
+            card_view:cardCornerRadius="@dimen/elevation_8"
+            android:elevation="@dimen/elevation_8">
+
+            <ImageView
+                android:id="@+id/companyLogo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/office"
+                android:scaleType="centerCrop"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/locatonLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/elevation_6"
+            android:layout_below="@id/card1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location"/>
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Andheri west Mumbai 400053"
+            android:layout_marginLeft="@dimen/height_30"
+            android:fontFamily="@font/opensans_regular"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/SalaryLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/elevation_6"
+            android:layout_below="@id/locatonLay">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="@dimen/height_24"
+                android:src="@drawable/money"/>
+
+            <TextView
+                android:id="@+id/salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10000 - 12000 per month"
+                android:layout_marginLeft="@dimen/height_30"
+                android:textColor="@color/black"
+                android:fontFamily="@font/opensans_regular"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SalaryLay"
+            android:text="posted on 12/02/2020"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/elevation_16"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+
+
